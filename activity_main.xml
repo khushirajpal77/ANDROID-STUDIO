@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/pic0"
+        android:layout_width="371dp"
+        android:layout_height="352dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img1" />
+
+    <ImageView
+        android:id="@+id/pic1"
+        android:layout_width="371dp"
+        android:layout_height="352dp"
+        android:layout_marginTop="88dp"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img2" />
+
+    <ImageView
+        android:id="@+id/pic2"
+        android:layout_width="371dp"
+        android:layout_height="352dp"
+        android:layout_marginTop="88dp"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img3" />
+
+    <LinearLayout
+        android:layout_width="244dp"
+        android:layout_height="53dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pic0">
+
+        <ImageButton
+            android:id="@+id/prev"
+            android:layout_width="5dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:onClick="prev"
+            app:srcCompat="@drawable/icon_prev"/>
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="5dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:onClick="next"
+            app:srcCompat="@drawable/icon_next"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
